@@ -1,3 +1,5 @@
+//axios get 사용 코드
+
 const getUsers = () => {
 	axios
 		.get("https://api.thecatapi.com/v1/images/search?size=full")
@@ -11,6 +13,7 @@ const getUsers = () => {
 };
 getUsers();
 
+//axios post 사용 코드
 /*
 axios({
 	method: "post",
@@ -25,4 +28,16 @@ axios({
 })
 	.then((response) => console.log(response))
 	.catch((error) => console.log(error));
+*/
+
+//fetch 사용 코드
+/*
+fetch("https://api.thecatapi.com/v1/images/search?size=full")
+	.then((res) => res.json())
+	.then((data) => {
+		document.querySelector("img").src = data[0].url;
+	})
+	.catch((err) => {
+		console.log("Fetch Error", err);
+	});
 */
