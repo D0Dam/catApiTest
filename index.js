@@ -11,8 +11,7 @@ const getUsers = () => {
 };
 getUsers();
 
-/*import axios from "axios";
-
+/*
 axios({
 	method: "post",
 	url: "https://api.thecatapi.com/v1/images/search?size=full",
@@ -23,5 +22,7 @@ axios({
 		width: 622,
 		height: 480,
 	},
-}).then((response) => console.log(response));
+})
+	.then((response) => console.log(response))
+	.catch((error) => console.log(error));
 */
