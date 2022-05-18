@@ -1,5 +1,5 @@
 //axios get 사용 코드
-
+/*
 const getUsers = () => {
 	axios
 		.get("https://api.thecatapi.com/v1/images/search?size=full")
@@ -12,12 +12,12 @@ const getUsers = () => {
 		.catch((error) => console.error(error));
 };
 getUsers();
-
+*/
 //axios post 사용 코드
-/*
 axios({
 	method: "post",
-	url: "https://api.thecatapi.com/v1/images/search?size=full",
+	url: "https://api.thecatapi.com/v1/images/search?size=full?1234",
+	headers: { "x-api-key": "1234" },
 	data: {
 		breeds: [],
 		id: "dt0",
@@ -28,7 +28,6 @@ axios({
 })
 	.then((response) => console.log(response))
 	.catch((error) => console.log(error));
-*/
 
 //fetch 사용 코드
 /*
